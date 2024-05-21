@@ -2,6 +2,8 @@ import CartItem from './CartItem';
 import cartItems from './data';
 const CartContainer = () => {
   const cartArray = [...cartItems];
+  const cart = new Map(cartItems);
+  console.log(cart);
 
   if (cartArray.length === 0) {
     return (
