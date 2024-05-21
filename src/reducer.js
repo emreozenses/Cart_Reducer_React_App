@@ -1,4 +1,4 @@
-import { CLEAR_CART,REMOVE_ITEM,INCREASE,DECREASE } from "./action";
+import { CLEAR_CART,REMOVE_ITEM,INCREASE,DECREASE,LOADING,DISPLAY_ITEMS } from "./action";
 
 const reducer = (state,action) =>{
     if (action.type === CLEAR_CART){
