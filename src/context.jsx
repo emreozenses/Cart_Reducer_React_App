@@ -8,6 +8,7 @@ import {
   LOADING,
   DISPLAY_ITEMS,
 } from './action';
+import cartItems from "./data";
 
 
 const GlobalContext = createContext();
@@ -18,7 +19,7 @@ export const useGlobalContext = ()=>useContext(GlobalContext);
 
 const initialState = {
     loading:false,
-    cart:[]
+    cart:new Map(cartItems.map((item)=>[item.id,item])),
 }
 
 const AppContext = ({children})=>{
